@@ -64,6 +64,7 @@ artifacts/
 
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
+.DS_Store
 
 # StyleCop
 StyleCopReport.xml
