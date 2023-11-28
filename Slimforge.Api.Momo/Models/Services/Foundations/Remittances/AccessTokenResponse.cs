@@ -2,15 +2,12 @@
 // Copyright (c) The Standard Organization, a coalition of the Good-Hearted Engineers 
 // ----------------------------------------------------------------------------------
 
-namespace Slimforge.Api.Momo.Models.Configurations
+namespace Slimforge.Api.Momo.Models.Services.Foundations.Remittances
 {
-    public class MomoConfigurations
+    public class AccessTokenResponse
     {
-        public string BaseUrl { get; set; }
-        public string TargetEnvironment { get; set; }
-        public string ApiUser { get; set; }
-        public string ApiKey { get; set; }
-        public string SubscriptionKey { get; set; }
         public string AccessToken { get; set; }
+        public string TokenType { get; set; }
+        public int ExpiresIn { get; set; }
     }
 }

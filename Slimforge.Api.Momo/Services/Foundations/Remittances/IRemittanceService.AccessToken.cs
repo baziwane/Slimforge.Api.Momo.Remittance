@@ -3,12 +3,12 @@
 // ----------------------------------------------------------------------------------
 
 using System.Threading.Tasks;
-using Slimforge.Api.Momo.Models.Services.Foundations.ExternalAuthentication;
+using Slimforge.Api.Momo.Models.Services.Foundations.Remittances;
 
-namespace Slimforge.Api.Momo.Brokers.MomoApis
+namespace Slimforge.Api.Momo.Services.Foundations.Remittances
 {
-    internal partial interface IMomoBroker
+    internal partial interface IRemittanceService
     {
-        ValueTask<ExternalAuthenticationResponse> PostAuthenticationRequestAsync();
+        ValueTask<AccessTokenResponse> GenerateAccessTokenAsync();
     }
 }

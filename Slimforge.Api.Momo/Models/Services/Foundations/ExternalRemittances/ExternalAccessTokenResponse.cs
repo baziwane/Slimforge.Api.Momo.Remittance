@@ -1,8 +1,12 @@
+// ---------------------------------------------------------------------------------- 
+// Copyright (c) The Standard Organization, a coalition of the Good-Hearted Engineers 
+// ----------------------------------------------------------------------------------
+
 using Newtonsoft.Json;
 
-namespace Slimforge.Api.Momo.Models.Services.Foundations.ExternalAuthentication
+namespace Slimforge.Api.Momo.Models.Services.Foundations.ExternalRemittances
 {
-    internal class ExternalAuthenticationResponse
+    internal class ExternalAccessTokenResponse
     {
         [JsonProperty(propertyName: "access_token")]
         public string AccessToken { get; set; }
