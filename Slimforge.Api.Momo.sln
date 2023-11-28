@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Slimforge.Api.Momo", "Slimforge.Api.Momo\Slimforge.Api.Momo.csproj", "{F4C84F3D-8E45-4625-BB7E-EB52FDBE6EB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slimforge.Api.Momo.Tests.Unit", "Slimforge.Api.Momo.Tests.Unit\Slimforge.Api.Momo.Tests.Unit.csproj", "{8CFC77A0-9E00-45B4-BD1B-D13511493E8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F4C84F3D-8E45-4625-BB7E-EB52FDBE6EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4C84F3D-8E45-4625-BB7E-EB52FDBE6EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4C84F3D-8E45-4625-BB7E-EB52FDBE6EB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CFC77A0-9E00-45B4-BD1B-D13511493E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CFC77A0-9E00-45B4-BD1B-D13511493E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CFC77A0-9E00-45B4-BD1B-D13511493E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CFC77A0-9E00-45B4-BD1B-D13511493E8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
