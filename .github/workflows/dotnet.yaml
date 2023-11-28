@@ -1,4 +1,4 @@
-name: Standard.AI.OpenAI Build
+name: Slimforge.Api.Momo Build
 on:
   push:
     branches:
