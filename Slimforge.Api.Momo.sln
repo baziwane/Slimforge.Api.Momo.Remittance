@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Slimforge.Api.Momo", "Slimf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slimforge.Api.Momo.Tests.Unit", "Slimforge.Api.Momo.Tests.Unit\Slimforge.Api.Momo.Tests.Unit.csproj", "{8CFC77A0-9E00-45B4-BD1B-D13511493E8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slimforge.Api.Momo.Infrastructure.Build", "Slimforge.Api.Momo.Infrastructure.Build\Slimforge.Api.Momo.Infrastructure.Build.csproj", "{B592732A-5799-4BDE-9BB0-01AB7D35767B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8CFC77A0-9E00-45B4-BD1B-D13511493E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CFC77A0-9E00-45B4-BD1B-D13511493E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CFC77A0-9E00-45B4-BD1B-D13511493E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B592732A-5799-4BDE-9BB0-01AB7D35767B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B592732A-5799-4BDE-9BB0-01AB7D35767B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B592732A-5799-4BDE-9BB0-01AB7D35767B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B592732A-5799-4BDE-9BB0-01AB7D35767B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
