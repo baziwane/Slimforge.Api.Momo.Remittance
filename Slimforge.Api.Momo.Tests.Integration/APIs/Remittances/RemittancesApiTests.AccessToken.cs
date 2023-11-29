@@ -10,7 +10,7 @@ namespace Slimforge.Api.Momo.Tests.Integration.APIs.Remittances
 {
     public partial class RemittancesApiTests
     {
-        [Fact(Skip = "This test is only for releases")]
+        [Fact]
         private async Task ShouldGenerateAccessTokenAsync()
         {
             // given - not needed
