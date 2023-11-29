@@ -41,11 +41,14 @@ namespace Slimforge.Api.Momo.Infrastructure.Build
                         "build",
                         new Job
                         {
-                           /* EnvironmentVariables = new Dictionary<string, string>
+                            EnvironmentVariables = new Dictionary<string, string>
                             {
-                                { "ApiKey", "${{ secrets.APIKEY }}" },
-                                { "OrgId", "${{ secrets.ORGID }}" }
-                            }, */
+                                { "ApiUser", "${{ secrets.API_USER }}" },
+                                { "ApiKey", "${{ secrets.API_KEY }}" },
+                                { "SubscriptionKey", "${{ secrets.SUBSCRIPTION_KEY }}" },
+                                { "BaseUrl", "${{ env.BASE_URL }}" },
+                                { "TargetEnvironment", "${{ env.TARGET_ENVIRONMENT }}" }
+                            }, 
 
                             RunsOn = BuildMachines.WindowsLatest,
 
@@ -86,7 +89,8 @@ namespace Slimforge.Api.Momo.Infrastructure.Build
                 }
             };
 
-            string buildScriptPath = "../../../../.github/workflows/dotnet.yml";
+            //string buildScriptPath = "../../../../.github/workflows/dotnet.yml";
+            string buildScriptPath = "../.github/workflows/dotnet.yml";
             string directoryPath = Path.GetDirectoryName(buildScriptPath);
 
             if (!Directory.Exists(directoryPath))

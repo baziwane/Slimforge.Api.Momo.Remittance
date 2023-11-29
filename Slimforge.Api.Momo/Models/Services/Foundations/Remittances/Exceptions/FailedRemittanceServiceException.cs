@@ -11,7 +11,7 @@ namespace Slimforge.Api.Momo.Models.Services.Foundations.Remittances.Exceptions
     {
         public FailedRemittanceServiceException(Exception innerException)
             : base(
-                message: "Failed Remittance error occurred, contact support.",
+                message: "Failed remittance error occurred, contact support.",
                     innerException: innerException)
         { }
 

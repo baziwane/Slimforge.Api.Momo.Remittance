@@ -11,7 +11,7 @@ namespace Slimforge.Api.Momo.Models.Services.Foundations.Remittances.Exceptions
     {
         public UnauthorizedRemittanceException(Exception innerException)
             : base(
-                message: "Unauthorized Remittance request, fix errors and try again.",
+                message: "Unauthorized remittance request, fix errors and try again.",
                     innerException: innerException)
         { }
 

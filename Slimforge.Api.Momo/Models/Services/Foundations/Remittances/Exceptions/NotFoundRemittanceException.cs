@@ -11,7 +11,7 @@ namespace Slimforge.Api.Momo.Models.Services.Foundations.Remittances.Exceptions
     {
         public NotFoundRemittanceException(Exception innerException)
             : base(
-                message: "Not found Remittance error occurred, fix errors and try again.",
+                message: "Not found remittance error occurred, fix errors and try again.",
                     innerException: innerException)
         { }
 
