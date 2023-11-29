@@ -22,3 +22,9 @@ jobs:
       run: dotnet build --no-restore
     - name: Running Tests
       run: dotnet test --no-build --verbosity normal
+    env:
+      ApiUser: ${{ secrets.API_USER }}
+      ApiKey: ${{ secrets.API_KEY }}
+      SubscriptionKey: ${{ secrets.SUBSCRIPTION_KEY }}
+      BaseUrl: ${{ vars.BASE_URL }}
+      TargetEnvironment: ${{ vars.TARGET_ENVIRONMENT }}

@@ -11,12 +11,12 @@ namespace Slimforge.Api.Momo.Models.Services.Foundations.Remittances.Exceptions
     {
         public InvalidRemittanceException()
             : base(
-                message: "Invalid Remittance error occurred, fix errors and try again.")
+                message: "Invalid remittance error occurred, fix errors and try again.")
         { }
 
         public InvalidRemittanceException(Exception innerException)
             : base(
-                message: "Invalid Remittance error occurred, fix errors and try again.",
+                message: "Invalid remittance error occurred, fix errors and try again.",
                     innerException: innerException)
         { }
 
