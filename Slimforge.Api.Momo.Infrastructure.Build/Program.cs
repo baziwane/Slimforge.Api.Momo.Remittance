@@ -46,8 +46,8 @@ namespace Slimforge.Api.Momo.Infrastructure.Build
                                 { "ApiUser", "${{ secrets.API_USER }}" },
                                 { "ApiKey", "${{ secrets.API_KEY }}" },
                                 { "SubscriptionKey", "${{ secrets.SUBSCRIPTION_KEY }}" },
-                                { "BaseUrl", "${{ env.BASE_URL }}" },
-                                { "TargetEnvironment", "${{ env.TARGET_ENVIRONMENT }}" }
+                                { "BaseUrl", "${{ vars.BASE_URL }}" },
+                                { "TargetEnvironment", "${{ vars.TARGET_ENVIRONMENT }}" }
                             }, 
 
                             RunsOn = BuildMachines.WindowsLatest,
