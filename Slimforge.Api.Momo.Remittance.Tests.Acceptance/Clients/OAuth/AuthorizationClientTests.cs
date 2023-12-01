@@ -64,9 +64,12 @@ namespace Slimforge.Api.Momo.Remittance.Tests.Acceptance.Clients.OAuth
         private static DateTimeOffset GetRandomDate() =>
             new DateTimeRange(earliestDate: new DateTime()).GetValue();
 
-        private static string CreateRandomString() =>
-            new MnemonicString().GetValue();
+        //private static string CreateRandomString() =>
+        //  new MnemonicString().GetValue();
 
+        private static string CreateRandomString() =>
+            new Guid().ToString();
+        
         private static Authorization CreateRandomAuthorization() =>
             CreateAuthorizationFiller().Create();
 
