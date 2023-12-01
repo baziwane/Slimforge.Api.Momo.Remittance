@@ -2,12 +2,10 @@
 // Copyright (c) The Standard Organization, a coalition of the Good-Hearted Engineers 
 // ----------------------------------------------------------------------------------
 
-using Slimforge.Api.Momo.Remittance.Clients.OAuth;
-
-namespace Slimforge.Api.Momo.Remittance.Clients.MomoApis
+namespace Slimforge.Api.Momo.Remittance.Models.Services.Foundations.OAuth
 {
-    public partial interface IMomoClient
+    public class Authorization
     {
-        IAuthorizationClient Authorizations { get; }
+        public AuthorizationResponse Response { get; set; }
     }
 }

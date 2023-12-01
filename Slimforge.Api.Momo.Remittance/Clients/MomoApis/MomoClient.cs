@@ -6,9 +6,9 @@ using System;
 using Microsoft.Extensions.DependencyInjection;
 using Slimforge.Api.Momo.Remittance.Brokers.DateTimes;
 using Slimforge.Api.Momo.Remittance.Brokers.MomoApis;
-using Slimforge.Api.Momo.Remittance.Clients.Remittances;
+using Slimforge.Api.Momo.Remittance.Clients.OAuth;
 using Slimforge.Api.Momo.Remittance.Models.Configurations;
-using Slimforge.Api.Momo.Remittance.Services.Foundations.Remittances;
+using Slimforge.Api.Momo.Remittance.Services.Foundations.OAuth;
 
 
 namespace Slimforge.Api.Momo.Remittance.Clients.MomoApis
@@ -20,11 +20,11 @@ namespace Slimforge.Api.Momo.Remittance.Clients.MomoApis
             IServiceProvider serviceProvider = RegisterServices(momoConfigurations);
             InitializeClients(serviceProvider);
         }
-        //public IRemittanceClient Remittance { get; private set; }
+        public IAuthorizationClient Authorizations { get; private set; }
     
         private void InitializeClients(IServiceProvider serviceProvider)
         {
-            AccessTokens = serviceProvider.GetRequiredService<IRemittanceClient>();
+            Authorizations = serviceProvider.GetRequiredService<IAuthorizationClient>();
         }
 
         private static IServiceProvider RegisterServices(MomoConfigurations momoConfigurations)
@@ -32,8 +32,8 @@ namespace Slimforge.Api.Momo.Remittance.Clients.MomoApis
             var serviceCollection = new ServiceCollection()
                 .AddTransient<IMomoBroker, MomoBroker>()
                 .AddTransient<IDateTimeBroker, DateTimeBroker>()
-                .AddTransient<IRemittanceService, RemittanceService>()
-                .AddTransient<IRemittanceClient, RemittanceClient>()
+                .AddTransient<IAuthorizationService, AuthorizationService>()
+                .AddTransient<IAuthorizationClient, AuthorizationClient>()
                 .AddSingleton(momoConfigurations);
 
             IServiceProvider serviceProvider = serviceCollection.BuildServiceProvider();

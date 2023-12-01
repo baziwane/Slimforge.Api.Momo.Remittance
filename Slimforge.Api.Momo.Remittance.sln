@@ -1,43 +1,46 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.5.002.0
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Slimforge.Api.Momo.Remittance", "Slimforge.Api.Momo.Remittance\Slimforge.Api.Momo.Remittance.csproj", "{F4C84F3D-8E45-4625-BB7E-EB52FDBE6EB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slimforge.Api.Momo.Remittance", "Slimforge.Api.Momo.Remittance\Slimforge.Api.Momo.Remittance.csproj", "{3D728632-0845-4389-8912-07D4DDF5695C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slimforge.Api.Momo.Remittance.Tests.Unit", "Slimforge.Api.Momo.Remittance.Tests.Unit\Slimforge.Api.Momo.Remittance.Tests.Unit.csproj", "{8CFC77A0-9E00-45B4-BD1B-D13511493E8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slimforge.Api.Momo.Remittance.Infrastructure.Build", "Slimforge.Api.Momo.Remittance.Infrastructure.Build\Slimforge.Api.Momo.Remittance.Infrastructure.Build.csproj", "{716E9AB6-15F8-496B-8793-0E7E32160F53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slimforge.Api.Momo.Remittance.Infrastructure.Build", "Slimforge.Api.Momo.Remittance.Infrastructure.Build\Slimforge.Api.Momo.Remittance.Infrastructure.Build.csproj", "{B592732A-5799-4BDE-9BB0-01AB7D35767B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slimforge.Api.Momo.Remittance.Tests.Acceptance", "Slimforge.Api.Momo.Remittance.Tests.Acceptance\Slimforge.Api.Momo.Remittance.Tests.Acceptance.csproj", "{ABB509D3-6593-40DC-88DF-B3EE42547304}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slimforge.Api.Momo.Remittance.Tests.Integration", "Slimforge.Api.Momo.Remittance.Tests.Integration\Slimforge.Api.Momo.Remittance.Tests.Integration.csproj", "{D9E4FE70-F236-406D-960C-C0FA4D95F11E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slimforge.Api.Momo.Remittance.Tests.Integration", "Slimforge.Api.Momo.Remittance.Tests.Integration\Slimforge.Api.Momo.Remittance.Tests.Integration.csproj", "{5B1B623F-3C74-4819-9DCC-0A8F01A0C5F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slimforge.Api.Momo.Remittance.Tests.Unit", "Slimforge.Api.Momo.Remittance.Tests.Unit\Slimforge.Api.Momo.Remittance.Tests.Unit.csproj", "{303521EB-8C49-4011-9423-61D6FB7DC5D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4C84F3D-8E45-4625-BB7E-EB52FDBE6EB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4C84F3D-8E45-4625-BB7E-EB52FDBE6EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4C84F3D-8E45-4625-BB7E-EB52FDBE6EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4C84F3D-8E45-4625-BB7E-EB52FDBE6EB0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8CFC77A0-9E00-45B4-BD1B-D13511493E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8CFC77A0-9E00-45B4-BD1B-D13511493E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8CFC77A0-9E00-45B4-BD1B-D13511493E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8CFC77A0-9E00-45B4-BD1B-D13511493E8C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B592732A-5799-4BDE-9BB0-01AB7D35767B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B592732A-5799-4BDE-9BB0-01AB7D35767B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B592732A-5799-4BDE-9BB0-01AB7D35767B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B592732A-5799-4BDE-9BB0-01AB7D35767B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D9E4FE70-F236-406D-960C-C0FA4D95F11E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D9E4FE70-F236-406D-960C-C0FA4D95F11E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D9E4FE70-F236-406D-960C-C0FA4D95F11E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D9E4FE70-F236-406D-960C-C0FA4D95F11E}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {25C59B90-383B-4A55-8B3D-9EC9D7A47036}
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D728632-0845-4389-8912-07D4DDF5695C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D728632-0845-4389-8912-07D4DDF5695C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D728632-0845-4389-8912-07D4DDF5695C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D728632-0845-4389-8912-07D4DDF5695C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{716E9AB6-15F8-496B-8793-0E7E32160F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716E9AB6-15F8-496B-8793-0E7E32160F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716E9AB6-15F8-496B-8793-0E7E32160F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716E9AB6-15F8-496B-8793-0E7E32160F53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB509D3-6593-40DC-88DF-B3EE42547304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB509D3-6593-40DC-88DF-B3EE42547304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB509D3-6593-40DC-88DF-B3EE42547304}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB509D3-6593-40DC-88DF-B3EE42547304}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B1B623F-3C74-4819-9DCC-0A8F01A0C5F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1B623F-3C74-4819-9DCC-0A8F01A0C5F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1B623F-3C74-4819-9DCC-0A8F01A0C5F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1B623F-3C74-4819-9DCC-0A8F01A0C5F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{303521EB-8C49-4011-9423-61D6FB7DC5D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{303521EB-8C49-4011-9423-61D6FB7DC5D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{303521EB-8C49-4011-9423-61D6FB7DC5D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{303521EB-8C49-4011-9423-61D6FB7DC5D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
