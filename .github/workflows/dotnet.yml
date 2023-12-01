@@ -1,4 +1,4 @@
-name: Slimforge.Api.Momo Build
+name: Slimforge.Api.Momo.Remittance Build
 on:
   push:
     branches:
