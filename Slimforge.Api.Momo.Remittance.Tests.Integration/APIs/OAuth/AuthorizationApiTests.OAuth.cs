@@ -18,7 +18,7 @@ namespace Slimforge.Api.Momo.Remittance.Tests.Integration.APIs.OAuth
             // when
             var responseAuthorization =
                 await this.momoClient.Authorizations.PromptAuthorizationAsync();
-
+                
             // then
             Assert.NotNull(responseAuthorization.Response.AccessToken);
         }
